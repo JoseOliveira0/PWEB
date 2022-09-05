@@ -1,0 +1,13 @@
+body{
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    background-color: rgb(226, 239, 247);
+}
+
+h1{
+    text-align: center;
+}
+    
+p{
+    text-align: justify;
+}
