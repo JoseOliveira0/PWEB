@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Janela PWEB</title>
+        <script>    
+            function aberta()
+            {
+            document.getElementById('janela').src = 'janelaopen.png';
+            }
+            function fechada()
+            {
+            document.getElementById('janela').src = 'janelaclose.png';
+            }
+            function quebrada()
+            {
+            document.getElementById('janela').src = 'janelabroken.png';
+            }
+        </script>
+
+</head>
+
+<body onload="fechada()">
+        <figure>
+            <img id='janela' onmouseover="aberta()" onclick="quebrada()" onmouseout="fechada()">
+        </figure>
+</body>
+</html>
