@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alterar Texto</title>
+</head>
+<body>
+    <div class="form">
+        <h2>Alterar Texto</h2>
+        <br>
+        <input type="text" name="texto" id="texto" size="20" maxlength="100">
+        <br>
+        <input type="checkbox" id="maiuscula" onclick="maiuscula()"> Maiúscula
+        <br>
+        <input type="checkbox" id="minuscula" onclick="minuscula()"> Minúscula
+        <br>
+    </div>
+
+    <script>
+
+        function maiuscula(){
+            
+            var txtmaiuscula = document.getElementById("texto").value;
+            var maiuscula = document.getElementById("maiuscula");
+
+                document.getElementById("texto").value = txtmaiuscula.toUpperCase();
+                maiuscula.checked = false;
+        }
+
+        function minuscula()
+        {   
+            var txtminuscula = document.getElementById("texto").value;
+            var minuscula = document.getElementById("min");
+
+            document.getElementById("texto").value = txtminuscula.toLowerCase();
+            minuscula.checked = false;
+        }
+
+        
+       
+    </script>
+
+</body>
+</html>
